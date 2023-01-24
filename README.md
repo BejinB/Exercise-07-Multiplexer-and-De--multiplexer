@@ -54,12 +54,12 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 6.Generate RTL realization and timing diagrams.
 
 ### PROGRAM 
-```
-/*
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: BEJIN.B
 RegisterNumber: 22001908
 # 1x4 Multiplexer:
+```
 module mux(I0,I1,I2,I3,S0,S1,Y); 
 input I0,I1,I2,I3,S0,S1;
 output Y;
@@ -73,7 +73,9 @@ and (R,S0,S1C,I2);
 and (S,S0,S1,I3); 
 or (Y,P,Q,R,S);
 endmodule
+```
 # 4x1 Demultiplexer:
+```
 module demux(Y0,Y1,Y2,Y3,S0,S1,I);
 input S0,S1,I;
 output Y0,Y1,Y2,Y3;
@@ -85,35 +87,40 @@ and (Y1,I,S0C,S1);
 and (Y2,I,S0,S1C); 
 and (Y3,I,S0,S1); 
 endmodule
-
-*/
 ```
 
 
 
-
-
-
 ### RTL LOGIC  
-
-
-
-
-
-
+# 1x4 Multiplexer:
+![image](https://user-images.githubusercontent.com/118367518/214304198-74dd1955-9aee-47ad-87e4-6f3179688d6e.png)
+# 4x1 Demultiplexer:
+![image](https://user-images.githubusercontent.com/118367518/214304335-413cbdbc-1a3b-4a8b-8b24-84c93e8b418d.png)
 
 
 ### TIMING DIGRAMS  
+# 1x4 Multiplexer:
+![image](https://user-images.githubusercontent.com/118367518/214304435-93c5c41f-414c-46e5-95eb-b90bdbc04c93.png)
+![image](https://user-images.githubusercontent.com/118367518/214304562-2c00d01a-37b9-4295-9d18-bc5ebc1584a9.png)
+![image](https://user-images.githubusercontent.com/118367518/214304679-3989b633-a450-466a-8816-acf48212b1d9.png)
+![image](https://user-images.githubusercontent.com/118367518/214304927-55e34ff7-6a4a-4f1b-a24b-96b3456e8a24.png)
 
+# 4x1 Demultiplexer:
+
+![image](https://user-images.githubusercontent.com/118367518/214305010-cac0c7ce-70b2-4859-be2c-162c39b8d2b5.png)
 
 
 
 
 ### TRUTH TABLE 
+# 1x4 Multiplexer:
+![image](https://user-images.githubusercontent.com/118367518/214305144-021760e1-5d52-4e79-bcbf-ff976df8dc01.png)
 
-
+# 4x1 Demultiplexer:
+![image](https://user-images.githubusercontent.com/118367518/214305266-1eb9dba9-3c2e-4456-9325-58dc9069df5e.png)
 
 
 
 
 ### RESULTS 
+Hence, 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
